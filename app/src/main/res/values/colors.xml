@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color">#767578</color>
+
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="yellow">#F8BA0F</color>
+
+
+
+
+
+    <color name="blacklight">#2f2f39</color>
+    <color name="graydark">#9398a0</color>
+
+    <color name="colorBackroundWhite">#f0f2ea</color>
+    <color name="colorGray">#495C67</color>
+    <color name="colorLightGray">#a6abae</color>
+
+    <color name="gitscolor">#183658</color>
+    <color name="txt_color">#1f2833</color>
+
+    <color name="colorTab">#008577</color>
+    <color name="graylight1">#aaaaaa</color>
+    <color name="lightgray">#33707070</color>
+    <color name="blue">#293859</color>
+    <color name="black">@android:color/black</color>
+
+
+
+
+    <color name="graylight">#fafafa</color>
+    <color name="darkblue">#2d5da1</color>
+    <color name="green">#159a0a</color>
+    <color name="smokegray">#f2f2f2</color>
+
+
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+
+        android:backgroundTint="@color/gitscolor"
+        android:id="@+id/reccalendar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/msg"
+        android:textSize="30sp"
+        android:text="Hello"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <LinearLayout
+        android:weightSum="40"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/holydaybgshape"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Holiday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/presentdaybgshape"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/absentbgshape"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/leaveshape"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+
+        android:id="@+id/idpiechat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>

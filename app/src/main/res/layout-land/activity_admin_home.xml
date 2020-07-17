@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout1"
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+       <include layout="@layout/toolbar"/>
+
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:paddingBottom="5dp"
+                    android:background="@android:color/white"
+                    android:layout_weight="40"
+                    android:id="@+id/imageSlider2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderCircularHandlerEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true"
+
+                    />
+                <LinearLayout
+                    android:layout_weight="60"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <HorizontalScrollView
+
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/add_teacher"
+                                    app:cardCornerRadius="20dp"
+                                    android:background="@android:color/white"
+                                    android:backgroundTint="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp">
+
+
+
+
+
+
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/teacher"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp"/>
+
+
+
+
+
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:id="@+id/tvsyllabus"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Manage Teacher"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/manage_student"
+                                    app:cardCornerRadius="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp">
+
+
+
+                                    <ImageView
+                                        android:id="@+id/img_1"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/student"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp" />
+
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Manage Students"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:id="@+id/fees_layout"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cardfees"
+                                    app:cardCornerRadius="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp">
+
+                                    <ImageView
+                                        android:id="@+id/payment"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/payment"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp" />
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:id="@+id/tvpayfees"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Manage Fees"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+                            <!--live class-->
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/sent_news"
+                                    app:cardCornerRadius="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp">
+
+
+                                    <ImageView
+
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/information"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp" />
+
+
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:id="@+id/tvnotes"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Add Notice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    app:cardCornerRadius="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_live_class"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/onlineclass_icon"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp" />
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:id="@+id/tvliveclass"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Online Class"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/feedback"
+                                    app:cardCornerRadius="20dp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="60dp">
+
+
+                                    <ImageView
+
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/feedback"
+                                        android:layout_width="80dp"
+                                        android:layout_height="30dp" />
+
+
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:id="@+id/tvhomework"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="10dp"
+                                    android:text="Feedbacks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/overlayBackground"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_drawer" />
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

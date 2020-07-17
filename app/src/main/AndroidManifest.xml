@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidcafe.newschoolmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.androidcafe.newschoolmanagement.Fees.SchoolFeesRecipt"></activity>
+        <activity android:name="com.androidcafe.newschoolmanagement.Fees.PayTermFees" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.AddNotes" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.AddHomeWork" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Fees.AllTypeFeesActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Student.ViewTimeTableActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Student.ViewAttendanceActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Online_Class.NewVideoPlayer" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Online_Class.PlayVideoDemo" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Online_Class.ShowAllSubjectActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.OnlineQuiz.ResultActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.OnlineQuiz.MultiQuestionActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Student.PayFeesActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.MainActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.ManageHomeWork" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.ManageNotes" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Common.PdfViewer" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.ManageSyllabus" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.AddSyallabus" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.AddAttendanceActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Admin.ManageTeacher" />
+        <activity
+            android:name="com.androidcafe.newschoolmanagement.Admin.AddTeacher"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Notice.NoticeActivity" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Admin.SentNotice" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Teacher.TeacherHome" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Student.StudentHome" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Admin.ManageStudent" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Admin.AddStudent" />
+        <activity android:name="com.androidcafe.newschoolmanagement.Admin.AdminHome" />
+        <activity
+            android:name="com.androidcafe.newschoolmanagement.Ragistration.StudentLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.androidcafe.newschoolmanagement.Ragistration.TeacherLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.androidcafe.newschoolmanagement.Ragistration.AdminLogin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.androidcafe.newschoolmanagement.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

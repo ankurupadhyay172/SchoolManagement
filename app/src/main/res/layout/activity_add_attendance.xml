@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <include layout="@layout/toolbar" />
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:text="Select All"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_weight="30"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/rbp"
+                        android:text="P"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <RadioButton
+                        android:id="@+id/rba"
+                        android:text="A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <RadioButton
+                        android:id="@+id/rbl"
+
+                        android:text="L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:divider="#00000000">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="50dp"
+            android:background="#ACACAC" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#007AFF"
+                android:id="@+id/contact">
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/ic_contact"/>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/p"
+                            android:textColor="@android:color/white"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/ic_contact"/>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/a"
+                            android:textColor="@android:color/white"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/ic_contact"/>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/l"
+                            android:textColor="@android:color/white"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/ic_contact"/>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/totalstudent"
+                            android:textColor="@android:color/white"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="7dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Notification"
+                    android:letterSpacing="0.1"
+                    android:textSize="12dp"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="50dp"
+                android:background="#ACACAC"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

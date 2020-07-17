@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/book3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <TextView
+        android:padding="20dp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Loading ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

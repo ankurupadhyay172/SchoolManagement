@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15.4dp">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="57.6dp"
+                    android:layout_height="57.6dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="16.3dp"
+                    android:id="@+id/foodimg1"
+                    android:src="@drawable/ic_man"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:text="Ankur Upadhyay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:text="7th A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16.3dp"
+                android:layout_marginLeft="14.4dp">
+
+
+
+
+                <LinearLayout
+                    android:weightSum="60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:layout_weight="50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14.4sp"
+                        android:textColor="#262628"
+                        android:id="@+id/title"
+                        android:text="Make Grilling A Healthy Experience"/>
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/remove"
+                        android:src="@drawable/ic_close_black_24dp"
+                        android:layout_weight="10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="14.4sp"
+                    android:textColor="#4a4a4a"
+                    android:id="@+id/msg"
+                    android:text="If you’re cooking your food properly on your barbeque, you’re getting delightful results every time. "/>
+
+                <LinearLayout
+                    android:weightSum="50"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11.5dp"
+                        android:id="@+id/time"
+                        android:textColor="#9b9b9b"
+                        android:text="20 mins"
+                        android:layout_marginBottom="13.5dp"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/download_icon"
+                        android:src="@drawable/ic_file_download_black_24dp"
+                        android:layout_weight="20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f5f5f5"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

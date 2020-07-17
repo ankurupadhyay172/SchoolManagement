@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Android Cafe</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="video">1.Online Attendance\n2.Online Class\n3.Online Chat\n4.Online Class/Exam Time Table\n5.Online notes\n6.Send/Receive Notice online\n7.Online Results\n8.Online Complaint or Feedback\n9.Get Data in excel sheet\n10.Online syllabus    </string>
+    <string name="video_desc"> Profits:\n1.Very Easy to use\n2.No Technical Requirement\n3.No Need of Operator\n4.One Time Cose no Extra Charges\n5.Easily Accessible with school and collages\n6.Secure Data with google  </string>
+
+
+
+    <string name="_1500">₹ 1500</string>
+    <string name="_0">₹ 0</string>
+    <string name="_1900">₹ 1900</string>
+
+
+</resources>
